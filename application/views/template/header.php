@@ -30,6 +30,7 @@
 		  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/ace-ie.min.css" />
 		<![endif]-->
 
+		 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/custom_style.css" />
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->

@@ -1,4 +1,5 @@
-						<div class="page-header">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/select2.min.css" />
+<div class="page-header">
 							<h1>
 								Add Contact
 								<small>
@@ -23,9 +24,7 @@
 				<label class="col-sm-4 control-label">Contact Name<span class="red-star">*</span></label>
 				<input id="form-field-1" name="name" class="col-sm-8" placeholder="Full Name" type="text" ng-model="contact.name" required>
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.name.$touched">
-															<small ng-show="addContactForm.name.$error.required">Please Enter Contact Name.</small>
-															</div>
+				
 				</div>
 				<div class="col-sm-6">
 				<label class="col-sm-4 control-label">Company Group</label>
@@ -39,17 +38,13 @@
 				<label class="col-sm-4 control-label">Email<span class="red-star">*</span></label>
 				<input id="form-field-1" name="email" class="col-sm-8" placeholder="Please Enter Email" type="email" ng-model="contact.email" required>
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.email.$touched">
-															<small ng-show="addContactForm.email.$error.required || addContactForm.email.$error.email">Please Enter Valid Email.</small>
-															</div>
+				
 				</div>
 				<div class="col-sm-6">
 				<label class="col-sm-4 control-label">Label<span class="red-star">*</span></label>
 				<input id="form-field-1" class="col-sm-8" name="label" placeholder="Label for recall" type="text" ng-model="contact.label" required>
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.label.$touched">
-															<small ng-show="addContactForm.label.$error.required">Please Select a Label.</small>
-															</div>
+				
 				</div>
 				
 			</div>
@@ -59,17 +54,13 @@
 				<label class="col-sm-4 control-label">Address<span class="red-star">*</span></label>
 				<textarea id="form-field-1" name="address" class="col-sm-8" placeholder="Address of Contact" ng-model="contact.address" required></textarea>
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.address.$touched">
-															<small ng-show="addContactForm.address.$error.required">Please Enter Address.</small>
-															</div>
+				
 				</div>
 				<div class="col-sm-6">
 				<label class="col-sm-4 control-label">Place<span class="red-star">*</span></label>
 				<input id="form-field-1" class="col-sm-8" placeholder="Place/Branch/Office" name="place" ng-model="contact.place" type="text" required>
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.place.$touched">
-															<small ng-show="addContactForm.place.$error.required">Please Enter Place.</small>
-															</div>
+				
 				</div>
 				
 			</div>
@@ -79,9 +70,7 @@
 				<label class="col-sm-4 control-label">PinCode<span class="red-star">*</span></label>
 				<input id="form-field-1" class="col-sm-8" name="contactPinCode" ng-model="contact.pinCode" placeholder="PinCode" type="text" required>
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.pinCode.$touched">
-															<small ng-show="addContactForm.pinCode.$error.required">Please Enter PinCode.</small>
-															</div>
+				
 				</div>
 				<div class="col-sm-6">
 					
@@ -96,9 +85,7 @@
 				
 				
 				<label class="col-sm-4 control-label">&nbsp;</label>
-				<div ng-show="addContactForm.$submitted || addContactForm.city.$touched">
-															<small ng-show="addContactForm.city.$error.required">Please Enter City.</small>
-															</div>
+				
 				
 				</div>
 				
@@ -162,9 +149,7 @@
 				
 						<div class="col-sm-3">
 							<input id="form-field-1" class="col-sm-12" placeholder="Alternate Email" type="email" ng-model="city.alternateEmail" name="alternateEmail" />
-							<div ng-show="addContactForm.$submitted || addContactForm.alternateEmail.$touched">
-															<small ng-show="addContactForm.alternateEmail.$error.email">Please Enter Valid Email.</small>
-															</div>
+							
 							</div>
 						<div class="col-sm-3">
 						<input id="form-field-1" class="col-sm-12" placeholder="Website" type="text" ng-model="city.website" name="website" />
@@ -192,18 +177,14 @@
 							</select>
 							
 							<label class="col-sm-4 control-label">&nbsp;</label>				
-							<div ng-show="addContactForm.$submitted || addContactForm.sourceType.$touched">
-																	<small ng-show="addContactForm.sourceType.$error.required">Please Enter Source Type.</small>
-																	</div>
+							
 						</div>
 						
 						<div class="col-sm-6">
 							<label class="col-sm-4 control-label">Source Details<span class="red-star">*</span></label>
 								<input class="col-sm-8" type="text" placeholder="Source Details" name="sourceDetails" ng-model="contact.sourceDetails" required />
 							<label class="col-sm-4 control-label">&nbsp;</label>				
-							<div ng-show="addContactForm.$submitted || addContactForm.sourceDetails.$touched">
-															<small ng-show="addContactForm.sourceDetails.$error.required">Please Enter Source Details.</small>
-															</div>
+							
 						</div>
 					</div>
 					
@@ -230,9 +211,7 @@
 							</select>
 								
 							<label class="col-sm-4 control-label">&nbsp;</label>				
-							<div ng-show="addContactForm.$submitted || addContactForm.RM.$touched">
-															<small ng-show="addContactForm.RM.$error.required">Please Select Relationship Manager.</small>
-															</div>
+							
 						</div>
 						
 						<div class="col-sm-6">
@@ -241,11 +220,9 @@
 																					<option value=""></option>
 							</select>
 								
-							<label class="col-sm-4 control-label">&nbsp;</label>				
+								
 							
-							<div ng-show="addContactForm.$submitted || addContactForm.ARM.$touched">
-															<small ng-show="addContactForm.ARM.$error.required">Please Select Accompnay Relationship Manager.</small>
-															</div>
+							
 						</div>
 					</div>
 			</div>
@@ -401,4 +378,71 @@
 						</div><!-- /.row -->
 					</div><!-- /.page-content -->
 				</div>
-			</div><!-- /.main-content -->
+			</div><!-- /.main-content --> 
+<script type="text/javascript">
+			
+			jQuery(function($){
+				//////////////////
+				//select2
+				$('.select2').css('width','200px').select2({allowClear:true})
+					
+				//in ajax mode, remove remaining elements before leaving page
+				$(document).one('ajaxloadstart.page', function(e) {
+					$('[class*=select2]').remove();
+					
+				});
+				jQuery( "#followDate" ).datepicker({
+					showOtherMonths: true,
+					selectOtherMonths: false,
+					//isRTL:true,
+			
+					
+					/*
+					changeMonth: true,
+					changeYear: true,
+					
+					showButtonPanel: true,
+					beforeShow: function() {
+						//change button colors
+						var datepicker = $(this).datepicker( "widget" );
+						setTimeout(function(){
+							var buttons = datepicker.find('.ui-datepicker-buttonpane')
+							.find('button');
+							buttons.eq(0).addClass('btn btn-xs');
+							buttons.eq(1).addClass('btn btn-xs btn-success');
+							buttons.wrapInner('<span class="bigger-110" />');
+						}, 0);
+					}
+			*/
+				});
+				jQuery( "#followTime" ).timepicker({
+					showOtherMonths: true,
+					selectOtherMonths: false,
+					//isRTL:true,
+			
+					
+					/*
+					changeMonth: true,
+					changeYear: true,
+					
+					showButtonPanel: true,
+					beforeShow: function() {
+						//change button colors
+						var datepicker = $(this).datepicker( "widget" );
+						setTimeout(function(){
+							var buttons = datepicker.find('.ui-datepicker-buttonpane')
+							.find('button');
+							buttons.eq(0).addClass('btn btn-xs');
+							buttons.eq(1).addClass('btn btn-xs btn-success');
+							buttons.wrapInner('<span class="bigger-110" />');
+						}, 0);
+					}
+			*/
+				});	
+				
+			
+			});
+			
+			
+</script>
+<script src="<?php echo base_url();?>assets/js/select2.min.js"></script>
